@@ -32,6 +32,6 @@ class Solution {
             }
         }
 
-        return -1; // Should never reach here for valid input
+        return -1;
     }
 }
