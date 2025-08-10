@@ -1,8 +1,7 @@
 class Solution {
     public int smallestDivisor(int[] nums, int threshold) {
         int n = nums.length;
-        // If threshold < n, even with largest divisor every element contributes 1,
-        // so total would be n which is > threshold -> impossible.
+      
         if (n > threshold) return -1;
 
         int maxNum = 0;
@@ -12,9 +11,9 @@ class Solution {
         while (low <= high) {
             int mid = low + (high - low) / 2;
             if (sumByDivisor(nums, mid, threshold) <= threshold) {
-                high = mid - 1; // mid works, try smaller
+                high = mid - 1; 
             } else {
-                low = mid + 1;  // mid too small (sum too big), try larger
+                low = mid + 1;  
             }
         }
         return low;
