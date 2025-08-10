@@ -1,44 +1,43 @@
 class Solution {
-    public int minDays(int[] bloomDay, int m, int k) {
-        int n = bloomDay.length;
-        long totalFlowersNeeded = (long) m * k;
-        if (n < totalFlowersNeeded) return -1; // Impossible case
-
-        int low = Integer.MAX_VALUE;
-        int high = Integer.MIN_VALUE;
-
-        // Find min and max bloom days
-        for (int day : bloomDay) {
-            low = Math.min(low, day);
-            high = Math.max(high, day);
-        }
-
-        while (low < high) {
-            int mid = low + (high - low) / 2;
-            if (canMake(bloomDay, m, k, mid)) {
-                high = mid; // Try smaller days
-            } else {
-                low = mid + 1; // Need more days
-            }
-        }
-        return low;
-    }
-
-    private boolean canMake(int[] bloomDay, int m, int k, int days) {
+    public boolean canMake(int[] bloomDay, int day, int m, int k) {
+        int count = 0;
         int bouquets = 0;
-        int flowers = 0;
 
-        for (int day : bloomDay) {
-            if (day <= days) {
-                flowers++;
-                if (flowers == k) {
+        for (int bloom : bloomDay) {
+            if (bloom <= day) {
+                count++;
+                if (count == k) {
                     bouquets++;
-                    flowers = 0; // Reset after making one bouquet
+                    count = 0; // reset after making one bouquet
                 }
             } else {
-                flowers = 0; // Break in adjacency
+                count = 0; // break in adjacency
             }
         }
         return bouquets >= m;
+    }
+
+    public int minDays(int[] bloomDay, int m, int k) {
+        long totalFlowersNeeded = (long) m * k;
+        int n = bloomDay.length;
+        if (totalFlowersNeeded > n)
+            return -1;
+
+        int minDay = Integer.MAX_VALUE, maxDay = Integer.MIN_VALUE;
+        for (int day : bloomDay) {
+            minDay = Math.min(minDay, day);
+            maxDay = Math.max(maxDay, day);
+        }
+
+        int low = minDay, high = maxDay;
+        while (low <= high) {
+            int mid = low + (high - low) / 2;
+            if (canMake(bloomDay, mid, m, k)) {
+                high = mid - 1; // try smaller days
+            } else {
+                low = mid + 1; // need more days
+            }
+        }
+        return low;
     }
 }
