@@ -42,4 +42,8 @@ A collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0152-maximum-product-subarray](https://github.com/gauthamseshapalli/DSA_LEETCODE/tree/master/0152-maximum-product-subarray) |
+## String
+|  |
+| ------- |
+| [1302-delete-characters-to-make-fancy-string](https://github.com/gauthamseshapalli/DSA_LEETCODE/tree/master/1302-delete-characters-to-make-fancy-string) |
 <!---LeetCode Topics End-->
