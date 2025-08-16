@@ -59,6 +59,7 @@ A collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0410-split-array-largest-sum](https://github.com/gauthamseshapalli/DSA_LEETCODE/tree/master/0410-split-array-largest-sum) |
+| [1448-maximum-69-number](https://github.com/gauthamseshapalli/DSA_LEETCODE/tree/master/1448-maximum-69-number) |
 ## Prefix Sum
 |  |
 | ------- |
@@ -67,4 +68,8 @@ A collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/gauthamseshapalli/DSA_LEETCODE/tree/master/0004-median-of-two-sorted-arrays) |
+## Math
+|  |
+| ------- |
+| [1448-maximum-69-number](https://github.com/gauthamseshapalli/DSA_LEETCODE/tree/master/1448-maximum-69-number) |
 <!---LeetCode Topics End-->
