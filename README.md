@@ -92,6 +92,7 @@ A collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [0002-add-two-numbers](https://github.com/gauthamseshapalli/DSA_LEETCODE/tree/master/0002-add-two-numbers) |
 | [0007-reverse-integer](https://github.com/gauthamseshapalli/DSA_LEETCODE/tree/master/0007-reverse-integer) |
+| [0009-palindrome-number](https://github.com/gauthamseshapalli/DSA_LEETCODE/tree/master/0009-palindrome-number) |
 | [1448-maximum-69-number](https://github.com/gauthamseshapalli/DSA_LEETCODE/tree/master/1448-maximum-69-number) |
 | [2432-number-of-zero-filled-subarrays](https://github.com/gauthamseshapalli/DSA_LEETCODE/tree/master/2432-number-of-zero-filled-subarrays) |
 ## Linked List
