@@ -1,6 +1,7 @@
 class Solution {
     public boolean isPalindrome(int x) {
-        if (x < 0) return false; 
+        if (x < 0)
+            return false;
 
         long revNum = 0;
         int original = x;
